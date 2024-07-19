@@ -3,39 +3,23 @@ template:
     bootswatch: paper
     
 navbar:
-  type: inverse
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "News"
-      href: news/index.html
-    - text: "Tutorials"
-      menu:
-        - text: "EndoMineR Principles"
-          href: articles/EndoMineRPrinciples.html
-        - text: "Package overview"
-          href: articles/EndoMineR.html
-        - text: "Analysis"
-          href: articles/Analysis.html
-        - text: "Barrett's"
-          href: articles/Barretts.html
-        - text: "Lower GI Polyps"
-          href: articles/Polyps.html
-        - text: "Data"
-          href: articles/Data.html
-    - text: "Functions"
-      href: reference/index.html
-  right:
-    - icon: fa fa-bullseye
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [com, twitter, book, stetho, search, github, lightswitch]
+  components:
+    com:
+      icon: fa fa-bullseye
       href: http://gastrodatascience.com
-    - icon: fa fa-twitter
+    twitter:
+      icon: fa fa-twitter
       href: https://twitter.com/GastroDS
-    - icon: fa-github fa-lg
-      href: https://github.com/ropensci/EndoMineR
-    - icon: far fa-book
+    book:
+      icon: far fa-book
       href: http://www.gastroenterologybook.com/
-    - icon:  fas fa-stethoscope
+    stetho:
+      icon:  fas fa-stethoscope
       href: https://www.nhs.uk/profiles/consultant/6029157
+      
 reference:
   - title: "NLP - Text Cleaning and Extraction:"
     desc: "Functions to clean raw text"
